@@ -36,5 +36,5 @@ if len(text) > 0:
         embed = getEmbeddings(processed_text, nlp).reshape((1, -1))
         pred = model.predict(embed)
         
-        st.text(f"The news snippet is: {labels[pred[0]]}")
+        st.subheader(f"The news snippet is: {labels[pred[0]]}")
 
